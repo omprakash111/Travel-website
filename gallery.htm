@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3/HTML5 Polaroid Gallery</title>
+<link type="text/css" href="gallerystyle.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<link href="main.css" rel="stylesheet">
+<style>
+
+* {margin:0;padding:0;list-style:none;}
+body {background:url(bg.png);}
+h1 {text-align:center;font-family:'Nothing You Could Do', cursive;padding:10px;text-shadow:1px 1px #333;background-color:#000;color:#fff;}
+.pics {margin:auto;margin:0px auto;position:relative;height:500px;width:800px;}
+.pics a {background:#fff;display:inline;float:left;width:auto;padding:10px 10px 30px 10px;text-align:center;text-decoration:none;color:#333;font-size:28px;font-family:'Nothing You Could Do', cursive;font-weight:bold;-webkit-box-shadow:0px 0px 10px rgba(0,0,0,1);-moz-box-shadow:0px 0px 10px rgba(0,0,0,1);box-shadow:0px 0px 10px rgba(0,0,0,1);-webkit-transition:all .30s;-moz-transition:all .30s;-o-transition:all .30s;transition:all .30s;position:absolute;}
+.pics img {display:block;padding-bottom:20px;}
+.pics a:hover {z-index:100;}
+.pics a:after {content:attr(title);}
+/* Pictures placement, scaling and rotation */
+.pics li:nth-child(1n) a {-webkit-transform:rotate(30deg) scale(0.7,0.7);-moz-transform:rotate(30deg) scale(0.7,0.7);transform:rotate(30deg) scale(0.7,0.7);top:0%;left:60%;}
+.pics li:nth-child(2n) a {-webkit-transform:rotate(-30deg) scale(0.7,0.7);-moz-transform:rotate(-30deg) scale(0.7,0.7);transform:rotate(-30deg) scale(0.7,0.7);top:40%;left:80%;}
+.pics li:nth-child(3n) a {-webkit-transform:rotate(40deg) scale(0.7,0.7);-moz-transform:rotate(40deg) scale(0.7,0.7);transform:rotate(40deg) scale(0.7,0.7);top:50%;left:-10%;}
+.pics li:nth-child(4n) a {-webkit-transform:rotate(-30deg) scale(0.7,0.7);-moz-transform:rotate(-30deg) scale(0.7,0.7);transform:rotate(-30deg) scale(0.7,0.7);top:0%;left:-10%;}
+.pics li:nth-child(5n) a {-webkit-transform:rotate(-20deg) scale(0.8,0.8);-moz-transform:rotate(-20deg) scale(0.8,0.8);transform:rotate(-20deg) scale(0.8,0.8);top:50%;left:20%;z-index:3;}
+.pics li:nth-child(6n) a {-webkit-transform:rotate(30deg) scale(0.7,0.7);-moz-transform:rotate(30deg) scale(0.7,0.7);transform:rotate(30deg) scale(0.7,0.7);top:60%;left:55%;}
+.pics li:nth-child(7n) a {-webkit-transform:rotate(10deg) scale(0.7,0.7);-moz-transform:rotate(10deg) scale(0.7,0.7);transform:rotate(10deg) scale(0.7,0.7);top:0%;left:25%;}
+.pics li:nth-child(n) a:hover {-webkit-transform:rotate(0deg) scale(1,1);-moz-transform:rotate(0deg) scale(1,1);transform:rotate(0deg) scale(1,1);}
+</style>
+</head>
+ 
+<body>
+
+<div class="nav">
+<ul style="list-style: none;">
+<li><a href="home.php">HOME</a></li>
+<li><a href="packages.htm">PACKAGES</a></li>
+<li><a href="">GALLERY</a></li>
+<li><a href="login.htm">LOG IN</a></li>	
+</ul>
+</div>
+<ul class="pics">
+<li><a href="" title="Sports"><img src="gall.jpg" height="330" width="300" /></a></li>
+<li><a href="" title="Random"><img src="new1.jpg" height="330" width="400"/></a></li>
+<li><a href="" title="Animal"><img src="new2.jpg" height="330" width="400"/></a></li>
+<li><a href="" title="Food"><img src="new3.jpg" height="330" width="400"/></a></li>
+<li><a href="" title="City"><img src="m.jpg" height="330" width="400"/></a></li>
+<li><a href="" title="Transport"><img src="cd.jpg" height="330" width="400"/></a></li>
+<li><a href="" title="Fashion"><img src="colorful.jpg" height="330" width="400"/></a></li>
+</ul><!--pics -->
+</body>
+</html>
